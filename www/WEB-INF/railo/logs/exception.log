@@ -1,0 +1,34 @@
+"Severity","ThreadID","Date","Time","Application","Message"
+"ERROR","web-0","08/26/2013","14:58:07","","invalid component definition, can't find org.test
+	at railo.runtime.component.ComponentLoader.load(ComponentLoader.java:272):272
+	at railo.runtime.component.ComponentLoader.loadComponent(ComponentLoader.java:39):39
+	at railo.runtime.PageContextImpl.loadComponent(PageContextImpl.java:2976):2976
+	at railo.runtime.functions.other.CreateObject.doComponent(CreateObject.java:152):152
+	at railo.runtime.functions.other.CreateObject.call(CreateObject.java:57):57
+	at railo.runtime.functions.other.CreateObject.call(CreateObject.java:37):37
+	at test_cfm$cf.call(C:\code\coldfusion\skeleton-railo-bootstrap-fw1\www\test.cfm:1):1
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:802):802
+	at railo.runtime.PageContextImpl.doInclude(PageContextImpl.java:754):754
+	at railo.runtime.listener.ModernAppListener._onRequest(ModernAppListener.java:183):183
+	at railo.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:18):18
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2255):2255
+	at railo.runtime.PageContextImpl.execute(PageContextImpl.java:2222):2222
+	at railo.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:315):315
+	at railo.loader.servlet.CFMLServlet.service(CFMLServlet.java:29):29
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728):728
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305):305
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210):210
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222):222
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123):123
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171):171
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99):99
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953):953
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118):118
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408):408
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023):1023
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589):589
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310):310
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110):1110
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603):603
+	at java.lang.Thread.run(Thread.java:722):722
+"
